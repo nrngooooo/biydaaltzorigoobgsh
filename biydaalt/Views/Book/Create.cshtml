@@ -1,0 +1,75 @@
+﻿@model biydaalt.Models.Book
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="bookName" class="control-label"></label>
+                <input asp-for="bookName" class="form-control" />
+                <span asp-validation-for="bookName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="author" class="control-label"></label>
+                <input asp-for="author" class="form-control" />
+                <span asp-validation-for="author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="page_count" class="control-label"></label>
+                <input asp-for="page_count" class="form-control" />
+                <span asp-validation-for="page_count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="turuluud.turulName" class="control-label"></label>
+                <select asp-for="turulId" class ="form-control" asp-items="ViewBag.turulId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="dedturuluud.dedTurulName" class="control-label"></label>
+                <select asp-for="dedTurulId" class ="form-control" asp-items="ViewBag.dedTurulId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="book_count" class="control-label"></label>
+                <input asp-for="book_count" class="form-control" />
+                <span asp-validation-for="book_count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pub_date" class="control-label"></label>
+                <input asp-for="pub_date" class="form-control" />
+                <span asp-validation-for="pub_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="pub_company" class="control-label"></label>
+                <input asp-for="pub_company" class="form-control" />
+                <span asp-validation-for="pub_company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="price" class="control-label"></label>
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="workerId" class="form-control" />
+                <span asp-validation-for="workerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

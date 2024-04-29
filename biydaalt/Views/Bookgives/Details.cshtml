@@ -1,0 +1,48 @@
+﻿@model biydaalt.Models.Bookgive
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Bookgive</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book.bookId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.user)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.user.userId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.worker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.worker.workerId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.enterdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.enterdate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.retdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.retdate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.bookgiveId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

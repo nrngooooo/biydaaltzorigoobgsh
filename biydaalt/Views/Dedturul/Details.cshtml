@@ -1,0 +1,30 @@
+﻿@model biydaalt.Models.Dedturul
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Dedturul</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dedTurulName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dedTurulName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.turul)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.turul.turulId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.dedTurulId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

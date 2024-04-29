@@ -1,0 +1,51 @@
+﻿@model biydaalt.Models.Bookact
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Bookact</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="bookId" class="control-label"></label>
+                <select asp-for="bookId" class ="form-control" asp-items="ViewBag.bookId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="workerId" class="control-label"></label>
+                <select asp-for="workerId" class ="form-control" asp-items="ViewBag.workerId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="act_count" class="control-label"></label>
+                <input asp-for="act_count" class="form-control" />
+                <span asp-validation-for="act_count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="actshaltgaan" class="control-label"></label>
+                <input asp-for="actshaltgaan" class="form-control" />
+                <span asp-validation-for="actshaltgaan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="actdate" class="control-label"></label>
+                <input asp-for="actdate" class="form-control" />
+                <span asp-validation-for="actdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

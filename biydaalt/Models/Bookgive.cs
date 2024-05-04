@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 namespace biydaalt.Models
 {
     public class Bookgive
@@ -17,8 +18,10 @@ namespace biydaalt.Models
         public int workerId { get; set; }
         public virtual Worker worker { get; set; }
         [Column(TypeName = "date")]
+        [DisplayName("Ном авсан огноо")]
         public DateOnly enterdate { get; set; }
         [Column(TypeName = "date")]
+        [DisplayName("Ном буцааж өгсөн огноо")]
         public DateOnly retdate { get; set; }
     }
 }

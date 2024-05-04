@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Department
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Departments.ToListAsync());
+            return View(await _context.departments.ToListAsync());
         }
 
         // GET: Department/Details/5
@@ -32,7 +32,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments
+            var department = await _context.departments
                 .FirstOrDefaultAsync(m => m.departmentId == id);
             if (department == null)
             {
@@ -72,7 +72,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments.FindAsync(id);
+            var department = await _context.departments.FindAsync(id);
             if (department == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var department = await _context.Departments
+            var department = await _context.departments
                 .FirstOrDefaultAsync(m => m.departmentId == id);
             if (department == null)
             {
@@ -138,10 +138,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var department = await _context.Departments.FindAsync(id);
+            var department = await _context.departments.FindAsync(id);
             if (department != null)
             {
-                _context.Departments.Remove(department);
+                _context.departments.Remove(department);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace biydaalt.Controllers
 
         private bool DepartmentExists(int id)
         {
-            return _context.Departments.Any(e => e.departmentId == id);
+            return _context.departments.Any(e => e.departmentId == id);
         }
     }
 }

@@ -21,7 +21,11 @@ namespace biydaalt.Controllers
         // GET: Turul
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Turuls.ToListAsync());
+            return View(await _context.turuls.ToListAsync());
+        }
+        public async Task<IActionResult> Indexu()
+        {
+            return View(await _context.turuls.ToListAsync());
         }
 
         // GET: Turul/Details/5
@@ -32,7 +36,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var turul = await _context.Turuls
+            var turul = await _context.turuls
                 .FirstOrDefaultAsync(m => m.turulId == id);
             if (turul == null)
             {
@@ -72,7 +76,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var turul = await _context.Turuls.FindAsync(id);
+            var turul = await _context.turuls.FindAsync(id);
             if (turul == null)
             {
                 return NotFound();
@@ -123,7 +127,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var turul = await _context.Turuls
+            var turul = await _context.turuls
                 .FirstOrDefaultAsync(m => m.turulId == id);
             if (turul == null)
             {
@@ -138,10 +142,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var turul = await _context.Turuls.FindAsync(id);
+            var turul = await _context.turuls.FindAsync(id);
             if (turul != null)
             {
-                _context.Turuls.Remove(turul);
+                _context.turuls.Remove(turul);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +154,7 @@ namespace biydaalt.Controllers
 
         private bool TurulExists(int id)
         {
-            return _context.Turuls.Any(e => e.turulId == id);
+            return _context.turuls.Any(e => e.turulId == id);
         }
     }
 }

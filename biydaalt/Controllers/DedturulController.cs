@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Dedturul
         public async Task<IActionResult> Index()
         {
-            var nomiinsanctx = _context.DedTuruls.Include(d => d.turul);
+            var nomiinsanctx = _context.dedTuruls.Include(d => d.turul);
             return View(await nomiinsanctx.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var dedturul = await _context.DedTuruls
+            var dedturul = await _context.dedTuruls
                 .Include(d => d.turul)
                 .FirstOrDefaultAsync(m => m.dedTurulId == id);
             if (dedturul == null)
@@ -47,7 +47,7 @@ namespace biydaalt.Controllers
         // GET: Dedturul/Create
         public IActionResult Create()
         {
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName");
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName");
             return View();
         }
 
@@ -56,7 +56,7 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("dedTurulId,dedTurulName,turulName")] Dedturul dedturul)
+        public async Task<IActionResult> Create([Bind("dedTurulId,dedTurulName,turulId")] Dedturul dedturul)
         {
             if (!ModelState.IsValid)
             {
@@ -64,7 +64,7 @@ namespace biydaalt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", dedturul.turulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", dedturul.turulId);
             return View(dedturul);
         }
 
@@ -76,12 +76,12 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var dedturul = await _context.DedTuruls.FindAsync(id);
+            var dedturul = await _context.dedTuruls.FindAsync(id);
             if (dedturul == null)
             {
                 return NotFound();
             }
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", dedturul.turulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", dedturul.turulId);
             return View(dedturul);
         }
 
@@ -117,7 +117,7 @@ namespace biydaalt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", dedturul.turulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", dedturul.turulId);
             return View(dedturul);
         }
 
@@ -129,7 +129,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var dedturul = await _context.DedTuruls
+            var dedturul = await _context.dedTuruls
                 .Include(d => d.turul)
                 .FirstOrDefaultAsync(m => m.dedTurulId == id);
             if (dedturul == null)
@@ -145,10 +145,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var dedturul = await _context.DedTuruls.FindAsync(id);
+            var dedturul = await _context.dedTuruls.FindAsync(id);
             if (dedturul != null)
             {
-                _context.DedTuruls.Remove(dedturul);
+                _context.dedTuruls.Remove(dedturul);
             }
 
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace biydaalt.Controllers
 
         private bool DedturulExists(int id)
         {
-            return _context.DedTuruls.Any(e => e.dedTurulId == id);
+            return _context.dedTuruls.Any(e => e.dedTurulId == id);
         }
     }
 }

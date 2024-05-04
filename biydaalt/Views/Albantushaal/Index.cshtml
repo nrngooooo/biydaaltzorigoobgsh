@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<biydaalt.Models.Albantushaal>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Албан тушаал нүүр хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Нүүр хуудас</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Шинээр албан тушаал нэмэх</a>
 </p>
 <table class="table">
     <thead>
@@ -25,9 +26,9 @@
                 @Html.DisplayFor(modelItem => item.albantushaalName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.albantushaalId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.albantushaalId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.albantushaalId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.albantushaalId">Засах</a> |
+                <a asp-action="Details" asp-route-id="@item.albantushaalId">Дэлгэрэнгүй</a> |
+                <a asp-action="Delete" asp-route-id="@item.albantushaalId">Устгах</a>
             </td>
         </tr>
 }

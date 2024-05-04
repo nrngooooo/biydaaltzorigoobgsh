@@ -1,28 +1,29 @@
 ﻿@model IEnumerable<biydaalt.Models.Bookact>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Актласан ном нүүр хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Актласан ном нүүр хуудас</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Ном актлах</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.book)
+                @Html.DisplayNameFor(model => model.book.bookName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.worker)
+                @Html.DisplayNameFor(model => model.worker.workerName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.act_count)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.actshaltgaan)
+                @Html.DisplayNameFor(model => model.actshaltgaan.actshaltgaanName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.actdate)
@@ -34,24 +35,24 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.book.bookId)
+                @Html.DisplayFor(modelItem => item.book.bookName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.worker.workerId)
+                @Html.DisplayFor(modelItem => item.worker.workerName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.act_count)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.actshaltgaan)
+                @Html.DisplayFor(modelItem => item.actshaltgaan.actshaltgaanName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.actdate)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.bookactId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.bookactId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.bookactId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.bookactId">Засах</a> |
+                <a asp-action="Details" asp-route-id="@item.bookactId">Дэлгэрэнгүй</a> |
+                <a asp-action="Delete" asp-route-id="@item.bookactId">Устгах</a>
             </td>
         </tr>
 }

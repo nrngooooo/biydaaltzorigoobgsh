@@ -1,0 +1,25 @@
+﻿@model biydaalt.Models.Actshaltgaan
+
+@{
+    ViewData["Title"] = "Актласан шалтгаан дэлгэрэнгүй хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Дэлгэрэнгүй</h1>
+
+<div>
+    <h4>Актласан шалтгаан</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.actshaltgaanName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.actshaltgaanName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.actshaltgaanId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
+</div>

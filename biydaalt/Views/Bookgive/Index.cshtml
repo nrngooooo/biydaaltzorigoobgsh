@@ -1,0 +1,60 @@
+﻿@model IEnumerable<biydaalt.Models.Bookgive>
+
+@{
+    ViewData["Title"] = "Олгосон номын нүүр хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Олгосон номын нүүр хуудас</h1>
+
+<p>
+    <a asp-action="Create">Шинээр ном олгох</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.book.bookName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.user.userName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.worker.workerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.enterdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.retdate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.book.bookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.user.userName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.worker.workerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.enterdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.retdate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.bookgiveId">Засах</a> |
+                <a asp-action="Details" asp-route-id="@item.bookgiveId">Дэлгэрэнгүй</a> |
+                <a asp-action="Delete" asp-route-id="@item.bookgiveId">Устгах</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,38 +1,45 @@
 ﻿@model biydaalt.Models.Torguuli
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Торгуулийн мэдээлэл дэлгэрэнгүй";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Торгуулийн мэдээлэл дэлгэрэнгүй</h1>
 
 <div>
-    <h4>Torguuli</h4>
+    <h4>Торгууль</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.user)
+            @Html.DisplayNameFor(model => model.user.userName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.user.userId)
+            @Html.DisplayFor(model => model.user.userName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.worker)
+            @Html.DisplayNameFor(model => model.worker.workerName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.worker.workerId)
+            @Html.DisplayFor(model => model.worker.workerName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book)
+            @Html.DisplayNameFor(model => model.book.bookName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.book.bookId)
+            @Html.DisplayFor(model => model.book.bookName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ashigodor)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ashigodor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.torguulishaltgaan.torguulishaltgaanName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.torguulishaltgaan.torguulishaltgaanName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.torguulihemje)
@@ -43,6 +50,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.torguuliId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.torguuliId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
 </div>

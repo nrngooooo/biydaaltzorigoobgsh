@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Worker
         public async Task<IActionResult> Index()
         {
-            var nomiinsanctx = _context.Workers.Include(w => w.albantushaal).Include(w => w.department);
+            var nomiinsanctx = _context.workers.Include(w => w.albantushaal).Include(w => w.department);
             return View(await nomiinsanctx.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var worker = await _context.Workers
+            var worker = await _context.workers
                 .Include(w => w.albantushaal)
                 .Include(w => w.department)
                 .FirstOrDefaultAsync(m => m.workerId == id);
@@ -48,8 +48,8 @@ namespace biydaalt.Controllers
         // GET: Worker/Create
         public IActionResult Create()
         {
-            ViewData["albantushaalId"] = new SelectList(_context.Albantushaals, "albantushaalId", "albantushaalName");
-            ViewData["departmentId"] = new SelectList(_context.Departments, "departmentId", "departmentName");
+            ViewData["albantushaalId"] = new SelectList(_context.albantushaals, "albantushaalId", "albantushaalName");
+            ViewData["departmentId"] = new SelectList(_context.departments, "departmentId", "departmentName");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace biydaalt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["albantushaalId"] = new SelectList(_context.Albantushaals, "albantushaalId", "albantushaalName", worker.albantushaalId);
-            ViewData["departmentId"] = new SelectList(_context.Departments, "departmentId", "departmentName", worker.departmentId);
+            ViewData["albantushaalId"] = new SelectList(_context.albantushaals, "albantushaalId", "albantushaalId", worker.albantushaalId);
+            ViewData["departmentId"] = new SelectList(_context.departments, "departmentId", "departmentName", worker.departmentId);
             return View(worker);
         }
 
@@ -79,13 +79,13 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var worker = await _context.Workers.FindAsync(id);
+            var worker = await _context.workers.FindAsync(id);
             if (worker == null)
             {
                 return NotFound();
             }
-            ViewData["albantushaalId"] = new SelectList(_context.Albantushaals, "albantushaalId", "albantushaalName", worker.albantushaalId);
-            ViewData["departmentId"] = new SelectList(_context.Departments, "departmentId", "departmentName", worker.departmentId);
+            ViewData["albantushaalId"] = new SelectList(_context.albantushaals, "albantushaalId", "albantushaalName", worker.albantushaalId);
+            ViewData["departmentId"] = new SelectList(_context.departments, "departmentId", "departmentName", worker.departmentId);
             return View(worker);
         }
 
@@ -121,8 +121,8 @@ namespace biydaalt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["albantushaalId"] = new SelectList(_context.Albantushaals, "albantushaalId", "albantushaalName", worker.albantushaalId);
-            ViewData["departmentId"] = new SelectList(_context.Departments, "departmentId", "departmentName", worker.departmentId);
+            ViewData["albantushaalId"] = new SelectList(_context.albantushaals, "albantushaalId", "albantushaalName", worker.albantushaalId);
+            ViewData["departmentId"] = new SelectList(_context.departments, "departmentId", "departmentName", worker.departmentId);
             return View(worker);
         }
 
@@ -134,7 +134,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var worker = await _context.Workers
+            var worker = await _context.workers
                 .Include(w => w.albantushaal)
                 .Include(w => w.department)
                 .FirstOrDefaultAsync(m => m.workerId == id);
@@ -151,10 +151,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var worker = await _context.Workers.FindAsync(id);
+            var worker = await _context.workers.FindAsync(id);
             if (worker != null)
             {
-                _context.Workers.Remove(worker);
+                _context.workers.Remove(worker);
             }
 
             await _context.SaveChangesAsync();
@@ -163,7 +163,7 @@ namespace biydaalt.Controllers
 
         private bool WorkerExists(int id)
         {
-            return _context.Workers.Any(e => e.workerId == id);
+            return _context.workers.Any(e => e.workerId == id);
         }
     }
 }

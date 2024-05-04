@@ -1,14 +1,15 @@
 ﻿@model biydaalt.Models.Worker
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Ажилтаны мэдээлэл устгах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Delete</h1>
+<h1>Ажилтаны мэдээлэл устгах</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Та үүнийг устгахдаа итгэлтэй байна уу?</h3>
 <div>
-    <h4>Worker</h4>
+    <h4>Ажилтаны мэдээлэл</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -18,16 +19,16 @@
             @Html.DisplayFor(model => model.workerName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.department)
+            @Html.DisplayNameFor(model => model.department.departmentName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.department.departmentId)
+            @Html.DisplayFor(model => model.department.departmentName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.albantushaal)
+            @Html.DisplayNameFor(model => model.albantushaal.albantushaalName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.albantushaal.albantushaalId)
+            @Html.DisplayFor(model => model.albantushaal.albantushaalName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.regdug)
@@ -45,7 +46,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="workerId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Тийм" class="btn btn-danger" /> |
+        <a asp-action="Index">Үгүй</a>
     </form>
 </div>

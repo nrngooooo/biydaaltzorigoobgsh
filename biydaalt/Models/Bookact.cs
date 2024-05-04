@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace biydaalt.Models
 {
@@ -14,8 +15,12 @@ namespace biydaalt.Models
         [ForeignKey("workerId")]
         public int workerId { get; set; }
         public virtual Worker worker { get; set; }
+        [DisplayName("Актласан тоо")]
         public int act_count { get; set; }
-        public string actshaltgaan { get; set; }
+        [ForeignKey("actshaltgaanId")]
+        public int actshaltgaanId { get; set; }
+        public virtual Actshaltgaan actshaltgaan { get; set;}
+        [DisplayName("Актласан огноо")]
         [Column(TypeName = "date")]
         public DateOnly actdate { get; set; }
     }

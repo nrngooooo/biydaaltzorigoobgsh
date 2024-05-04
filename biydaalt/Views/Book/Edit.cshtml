@@ -1,12 +1,12 @@
 ﻿@model biydaalt.Models.Book
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Ном засах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Ном засах</h1>
 
-<h4>Book</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,6 +19,11 @@
                 <span asp-validation-for="bookName" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="bookimage" class="control-label"></label>
+                <input asp-for="bookimage" class="form-control" />
+                <span asp-validation-for="bookimage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="author" class="control-label"></label>
                 <input asp-for="author" class="form-control" />
                 <span asp-validation-for="author" class="text-danger"></span>
@@ -29,12 +34,12 @@
                 <span asp-validation-for="page_count" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="turulId" class="control-label"></label>
+                <label asp-for="turuluud.turulName" class="control-label"></label>
                 <select asp-for="turulId" class="form-control" asp-items="ViewBag.turulId"></select>
                 <span asp-validation-for="turulId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="dedTurulId" class="control-label"></label>
+                <label asp-for="dedturuluud.dedTurulName" class="control-label"></label>
                 <select asp-for="dedTurulId" class="form-control" asp-items="ViewBag.dedTurulId"></select>
                 <span asp-validation-for="dedTurulId" class="text-danger"></span>
             </div>
@@ -45,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="pub_date" class="control-label"></label>
-                <input asp-for="pub_date" class="form-control" />
+                <input type="date" asp-for="pub_date" class="form-control" />
                 <span asp-validation-for="pub_date" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -59,19 +64,19 @@
                 <span asp-validation-for="price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="workerId" class="control-label"></label>
-                <input asp-for="workerId" class="form-control" />
+                <label asp-for="worker.workerName" class="control-label"></label>
+                <select asp-for="workerId" class="form-control" asp-items="ViewBag.workerId"></select>
                 <span asp-validation-for="workerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Нэмэх" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>
 
 @section Scripts {

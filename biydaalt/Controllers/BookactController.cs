@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Bookact
         public async Task<IActionResult> Index()
         {
-            var nomiinsanctx = _context.Bookacts.Include(b => b.book).Include(b => b.worker);
+            var nomiinsanctx = _context.bookacts.Include(b => b.actshaltgaan).Include(b => b.book).Include(b => b.worker);
             return View(await nomiinsanctx.ToListAsync());
         }
 
@@ -33,7 +33,8 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var bookact = await _context.Bookacts
+            var bookact = await _context.bookacts
+                .Include(b => b.actshaltgaan)
                 .Include(b => b.book)
                 .Include(b => b.worker)
                 .FirstOrDefaultAsync(m => m.bookactId == id);
@@ -48,8 +49,9 @@ namespace biydaalt.Controllers
         // GET: Bookact/Create
         public IActionResult Create()
         {
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId");
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId");
+            ViewData["actshaltgaanId"] = new SelectList(_context.actshaltgaans, "actshaltgaanId", "actshaltgaanName");
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName");
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName");
             return View();
         }
 
@@ -58,16 +60,17 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("bookactId,bookId,workerId,act_count,actshaltgaan,actdate")] Bookact bookact)
+        public async Task<IActionResult> Create([Bind("bookactId,bookId,workerId,act_count,actshaltgaanId,actdate")] Bookact bookact)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Add(bookact);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", bookact.bookId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", bookact.workerId);
+            ViewData["actshaltgaanId"] = new SelectList(_context.actshaltgaans, "actshaltgaanId", "actshaltgaanName", bookact.actshaltgaanId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName", bookact.bookId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", bookact.workerId);
             return View(bookact);
         }
 
@@ -79,13 +82,14 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var bookact = await _context.Bookacts.FindAsync(id);
+            var bookact = await _context.bookacts.FindAsync(id);
             if (bookact == null)
             {
                 return NotFound();
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", bookact.bookId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", bookact.workerId);
+            ViewData["actshaltgaanId"] = new SelectList(_context.actshaltgaans, "actshaltgaanId", "actshaltgaanName", bookact.actshaltgaanId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName", bookact.bookId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", bookact.workerId);
             return View(bookact);
         }
 
@@ -94,14 +98,14 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("bookactId,bookId,workerId,act_count,actshaltgaan,actdate")] Bookact bookact)
+        public async Task<IActionResult> Edit(int id, [Bind("bookactId,bookId,workerId,act_count,actshaltgaanId,actdate")] Bookact bookact)
         {
             if (id != bookact.bookactId)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
@@ -121,8 +125,9 @@ namespace biydaalt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", bookact.bookId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", bookact.workerId);
+            ViewData["actshaltgaanId"] = new SelectList(_context.actshaltgaans, "actshaltgaanId", "actshaltgaanName", bookact.actshaltgaanId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName", bookact.bookId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", bookact.workerId);
             return View(bookact);
         }
 
@@ -134,7 +139,8 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var bookact = await _context.Bookacts
+            var bookact = await _context.bookacts
+                .Include(b => b.actshaltgaan)
                 .Include(b => b.book)
                 .Include(b => b.worker)
                 .FirstOrDefaultAsync(m => m.bookactId == id);
@@ -151,10 +157,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var bookact = await _context.Bookacts.FindAsync(id);
+            var bookact = await _context.bookacts.FindAsync(id);
             if (bookact != null)
             {
-                _context.Bookacts.Remove(bookact);
+                _context.bookacts.Remove(bookact);
             }
 
             await _context.SaveChangesAsync();
@@ -163,7 +169,7 @@ namespace biydaalt.Controllers
 
         private bool BookactExists(int id)
         {
-            return _context.Bookacts.Any(e => e.bookactId == id);
+            return _context.bookacts.Any(e => e.bookactId == id);
         }
     }
 }

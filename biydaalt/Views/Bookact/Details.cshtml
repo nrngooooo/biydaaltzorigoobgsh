@@ -1,26 +1,27 @@
 ﻿@model biydaalt.Models.Bookact
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Актласан номны дэлгэрэнгүй хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Актласан номны дэлгэрэнгүй хуудас</h1>
 
 <div>
-    <h4>Bookact</h4>
+    <h4>Актласан ном</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book)
+            @Html.DisplayNameFor(model => model.book.bookName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.book.bookId)
+            @Html.DisplayFor(model => model.book.bookName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.worker)
+            @Html.DisplayNameFor(model => model.worker.workerName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.worker.workerId)
+            @Html.DisplayFor(model => model.worker.workerName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.act_count)
@@ -29,10 +30,10 @@
             @Html.DisplayFor(model => model.act_count)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.actshaltgaan)
+            @Html.DisplayNameFor(model => model.actshaltgaan.actshaltgaanName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.actshaltgaan)
+            @Html.DisplayFor(model => model.actshaltgaan.actshaltgaanName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.actdate)
@@ -43,6 +44,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.bookactId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.bookactId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
 </div>

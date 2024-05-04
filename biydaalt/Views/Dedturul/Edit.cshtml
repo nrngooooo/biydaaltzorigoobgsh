@@ -1,12 +1,12 @@
 ﻿@model biydaalt.Models.Dedturul
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Номын дэд төрөл засах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Номын дэд төрөл засах</h1>
 
-<h4>Dedturul</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,19 +19,19 @@
                 <span asp-validation-for="dedTurulName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="turulId" class="control-label"></label>
+                <label asp-for="turul.turulName" class="control-label"></label>
                 <select asp-for="turulId" class="form-control" asp-items="ViewBag.turulId"></select>
                 <span asp-validation-for="turulId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Засах" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>
 
 @section Scripts {

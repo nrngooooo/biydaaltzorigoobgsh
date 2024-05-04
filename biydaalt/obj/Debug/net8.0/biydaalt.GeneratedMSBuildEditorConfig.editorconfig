@@ -26,6 +26,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\biydaaltzorigoobgsh\biydaalt
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Actshaltgaan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0c2hhbHRnYWFuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Actshaltgaan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0c2hhbHRnYWFuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Actshaltgaan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0c2hhbHRnYWFuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Actshaltgaan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0c2hhbHRnYWFuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Actshaltgaan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0c2hhbHRnYWFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Albantushaal/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxiYW50dXNoYWFsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,24 +86,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2FjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgives/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVzXENyZWF0ZS5jc2h0bWw=
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgive/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgives/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVzXERlbGV0ZS5jc2h0bWw=
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgive/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgives/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVzXERldGFpbHMuY3NodG1s
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgive/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgives/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVzXEVkaXQuY3NodG1s
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgive/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgives/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVzXEluZGV4LmNzaHRtbA==
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Bookgive/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2dpdmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Book/Create.cshtml]
@@ -146,6 +166,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Home1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZTFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -160,6 +184,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Torguulishaltgaan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9yZ3V1bGlzaGFsdGdhYW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Torguulishaltgaan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9yZ3V1bGlzaGFsdGdhYW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Torguulishaltgaan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9yZ3V1bGlzaGFsdGdhYW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Torguulishaltgaan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9yZ3V1bGlzaGFsdGdhYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Torguulishaltgaan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9yZ3V1bGlzaGFsdGdhYW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Torguuli/Create.cshtml]
@@ -200,6 +244,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Turul/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVydWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Turul/Indexu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVydWxcSW5kZXh1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/biydaaltzorigoobgsh/biydaalt/Views/User/Create.cshtml]
@@ -253,3 +301,7 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/biydaaltzorigoobgsh/biydaalt/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ux897lbgh5
+
+[D:/biydaaltzorigoobgsh/biydaalt/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-8injrer7bw

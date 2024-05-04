@@ -1,0 +1,25 @@
+﻿@model biydaalt.Models.Torguulishaltgaan
+
+@{
+    ViewData["Title"] = "Торгуулийн шалтгаан дэлгэрэнгүй";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Торгуулийн шалтгаан дэлгэрэнгүй</h1>
+
+<div>
+    <h4>Торгуулийн шалтгаан</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.torguulishaltgaanName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.torguulishaltgaanName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.torguulishaltgaanId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
+</div>

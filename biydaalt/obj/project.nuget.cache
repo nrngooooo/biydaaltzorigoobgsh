@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RVy1EIN3NPCkafMPrKWxudtK7vKJVdE5fL+aO71FFcH2iyidDMWcxIJflVxsonJH5Hrvxffe4r/Y6JIQPE8qAQ==",
+  "dgSpecHash": "l3Wy+ZIJtwecJ3Y34t6dxlqyG0lNNie68XlYBuGO7Hoz8O+sN4iUUhu0dEjHEkhgi/KivzrjTlWFs9cID9zPFQ==",
   "success": true,
   "projectFilePath": "D:\\biydaaltzorigoobgsh\\biydaalt\\biydaalt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dnara\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\dnara\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\dnara\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\dnara\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\dnara\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dnara\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

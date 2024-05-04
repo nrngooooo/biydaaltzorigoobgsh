@@ -1,23 +1,23 @@
 ﻿@model biydaalt.Models.Bookact
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Ном актлах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Ном актлах</h1>
 
-<h4>Bookact</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="bookId" class="control-label"></label>
+                <label asp-for="book.bookName" class="control-label"></label>
                 <select asp-for="bookId" class ="form-control" asp-items="ViewBag.bookId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="workerId" class="control-label"></label>
+                <label asp-for="worker.workerName" class="control-label"></label>
                 <select asp-for="workerId" class ="form-control" asp-items="ViewBag.workerId"></select>
             </div>
             <div class="form-group">
@@ -26,24 +26,23 @@
                 <span asp-validation-for="act_count" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="actshaltgaan" class="control-label"></label>
-                <input asp-for="actshaltgaan" class="form-control" />
-                <span asp-validation-for="actshaltgaan" class="text-danger"></span>
+                <label asp-for="actshaltgaan.actshaltgaanName" class="control-label"></label>
+                <select asp-for="actshaltgaanId" class ="form-control" asp-items="ViewBag.actshaltgaanId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="actdate" class="control-label"></label>
-                <input asp-for="actdate" class="form-control" />
+                <input type="date" asp-for="actdate" class="form-control" />
                 <span asp-validation-for="actdate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Актлах" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>
 
 @section Scripts {

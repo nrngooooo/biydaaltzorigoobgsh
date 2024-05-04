@@ -1,15 +1,22 @@
 ﻿@model biydaalt.Models.User
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Үйлчлүүлэгчийн дэлгэрэнгүй мэдээлэл";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Үйлчлүүлэгчийн дэлгэрэнгүй мэдээлэл</h1>
 
 <div>
-    <h4>User</h4>
+    <h4>Үйлчлүүлэгчийн мэдээлэл</h4>
     <hr />
     <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.userLast)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.userLast)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.userName)
         </dt>
@@ -23,14 +30,14 @@
             @Html.DisplayFor(model => model.regdug)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.phone)
+            @Html.DisplayNameFor(model => model.password)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.phone)
+            @Html.DisplayFor(model => model.password)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.userId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.userId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
 </div>

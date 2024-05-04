@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace biydaalt.Models
 {
@@ -18,6 +19,10 @@ namespace biydaalt.Models
         public int bookId { get; set; }
         public virtual Book book { get; set; }
         public int ashigodor { get; set; }
+        [ForeignKey("torguulishaltgaanId")]
+        public int torguulishaltgaanId { get; set; }
+        public virtual Torguulishaltgaan torguulishaltgaan { get; set; }
+        [DisplayName("Торгууль")]
         public int torguulihemje { get; set; }
     }
 }

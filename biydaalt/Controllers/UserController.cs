@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: User
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            return View(await _context.users.ToListAsync());
         }
 
         // GET: User/Details/5
@@ -32,7 +32,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var user = await _context.users
                 .FirstOrDefaultAsync(m => m.userId == id);
             if (user == null)
             {
@@ -53,7 +53,7 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("userId,userName,regdug,phone")] User user)
+        public async Task<IActionResult> Create([Bind("userId,userLast,userName,regdug,phone")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -72,7 +72,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
@@ -85,7 +85,7 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("userId,userName,regdug,phone")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("userId,userLast,userName,regdug,phone")] User user)
         {
             if (id != user.userId)
             {
@@ -123,7 +123,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var user = await _context.Users
+            var user = await _context.users
                 .FirstOrDefaultAsync(m => m.userId == id);
             if (user == null)
             {
@@ -138,10 +138,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.users.FindAsync(id);
             if (user != null)
             {
-                _context.Users.Remove(user);
+                _context.users.Remove(user);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace biydaalt.Controllers
 
         private bool UserExists(int id)
         {
-            return _context.Users.Any(e => e.userId == id);
+            return _context.users.Any(e => e.userId == id);
         }
     }
 }

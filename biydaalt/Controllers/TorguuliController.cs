@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Torguuli
         public async Task<IActionResult> Index()
         {
-            var nomiinsanctx = _context.Torguulis.Include(t => t.book).Include(t => t.user).Include(t => t.worker);
+            var nomiinsanctx = _context.torguulis.Include(t => t.book).Include(t => t.torguulishaltgaan).Include(t => t.user).Include(t => t.worker);
             return View(await nomiinsanctx.ToListAsync());
         }
 
@@ -33,8 +33,9 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var torguuli = await _context.Torguulis
+            var torguuli = await _context.torguulis
                 .Include(t => t.book)
+                .Include(t => t.torguulishaltgaan)
                 .Include(t => t.user)
                 .Include(t => t.worker)
                 .FirstOrDefaultAsync(m => m.torguuliId == id);
@@ -49,9 +50,10 @@ namespace biydaalt.Controllers
         // GET: Torguuli/Create
         public IActionResult Create()
         {
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId");
-            ViewData["userId"] = new SelectList(_context.Users, "userId", "userId");
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId");
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName");
+            ViewData["torguulishaltgaanId"] = new SelectList(_context.torguulishaltgaans, "torguulishaltgaanId", "torguulishaltgaanName");
+            ViewData["userId"] = new SelectList(_context.users, "userId", "userName");
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName");
             return View();
         }
 
@@ -60,7 +62,7 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("torguuliId,userId,workerId,bookId,ashigodor,torguulihemje")] Torguuli torguuli)
+        public async Task<IActionResult> Create([Bind("torguuliId,userId,workerId,bookId,ashigodor,torguulishaltgaanId,torguulihemje")] Torguuli torguuli)
         {
             if (ModelState.IsValid)
             {
@@ -68,9 +70,10 @@ namespace biydaalt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", torguuli.bookId);
-            ViewData["userId"] = new SelectList(_context.Users, "userId", "userId", torguuli.userId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", torguuli.workerId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName", torguuli.bookId);
+            ViewData["torguulishaltgaanId"] = new SelectList(_context.torguulishaltgaans, "torguulishaltgaanId", "torguulishaltgaanName", torguuli.torguulishaltgaanId);
+            ViewData["userId"] = new SelectList(_context.users, "userId", "userName", torguuli.userId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", torguuli.workerId);
             return View(torguuli);
         }
 
@@ -82,14 +85,15 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var torguuli = await _context.Torguulis.FindAsync(id);
+            var torguuli = await _context.torguulis.FindAsync(id);
             if (torguuli == null)
             {
                 return NotFound();
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", torguuli.bookId);
-            ViewData["userId"] = new SelectList(_context.Users, "userId", "userId", torguuli.userId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", torguuli.workerId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "bookName", torguuli.bookId);
+            ViewData["torguulishaltgaanId"] = new SelectList(_context.torguulishaltgaans, "torguulishaltgaanId", "torguulishaltgaanName", torguuli.torguulishaltgaanId);
+            ViewData["userId"] = new SelectList(_context.users, "userId", "userName", torguuli.userId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", torguuli.workerId);
             return View(torguuli);
         }
 
@@ -98,14 +102,14 @@ namespace biydaalt.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("torguuliId,userId,workerId,bookId,ashigodor,torguulihemje")] Torguuli torguuli)
+        public async Task<IActionResult> Edit(int id, [Bind("torguuliId,userId,workerId,bookId,ashigodor,torguulishaltgaanId,torguulihemje")] Torguuli torguuli)
         {
             if (id != torguuli.torguuliId)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
@@ -125,9 +129,10 @@ namespace biydaalt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["bookId"] = new SelectList(_context.Books, "bookId", "bookId", torguuli.bookId);
-            ViewData["userId"] = new SelectList(_context.Users, "userId", "userId", torguuli.userId);
-            ViewData["workerId"] = new SelectList(_context.Workers, "workerId", "workerId", torguuli.workerId);
+            ViewData["bookId"] = new SelectList(_context.books, "bookId", "author", torguuli.bookId);
+            ViewData["torguulishaltgaanId"] = new SelectList(_context.torguulishaltgaans, "torguulishaltgaanId", "torguulishaltgaanId", torguuli.torguulishaltgaanId);
+            ViewData["userId"] = new SelectList(_context.users, "userId", "regdug", torguuli.userId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "regdug", torguuli.workerId);
             return View(torguuli);
         }
 
@@ -139,8 +144,9 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var torguuli = await _context.Torguulis
+            var torguuli = await _context.torguulis
                 .Include(t => t.book)
+                .Include(t => t.torguulishaltgaan)
                 .Include(t => t.user)
                 .Include(t => t.worker)
                 .FirstOrDefaultAsync(m => m.torguuliId == id);
@@ -157,10 +163,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var torguuli = await _context.Torguulis.FindAsync(id);
+            var torguuli = await _context.torguulis.FindAsync(id);
             if (torguuli != null)
             {
-                _context.Torguulis.Remove(torguuli);
+                _context.torguulis.Remove(torguuli);
             }
 
             await _context.SaveChangesAsync();
@@ -169,7 +175,7 @@ namespace biydaalt.Controllers
 
         private bool TorguuliExists(int id)
         {
-            return _context.Torguulis.Any(e => e.torguuliId == id);
+            return _context.torguulis.Any(e => e.torguuliId == id);
         }
     }
 }

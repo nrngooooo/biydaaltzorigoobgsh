@@ -1,0 +1,27 @@
+﻿@model biydaalt.Models.Actshaltgaan
+
+@{
+    ViewData["Title"] = "Актласан шалтгаан устгах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<h1>Актласан шалтгаан устгах хуудас</h1>
+
+<h3>Үүнийг утсгахдаа итгэлтэй байна уу?</h3>
+<div>
+    <h4>Актласан шалтгаан устгах</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.actshaltgaanName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.actshaltgaanName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="actshaltgaanId" />
+        <input type="submit" value="Тийм" class="btn btn-danger" /> |
+        <a asp-action="Index">Үгүй</a>
+    </form>
+</div>

@@ -252,3 +252,4 @@ D:\biydaaltzorigoobgsh\biydaalt\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microso
 D:\biydaaltzorigoobgsh\biydaalt\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\biydaaltzorigoobgsh\biydaalt\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\biydaaltzorigoobgsh\biydaalt\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\biydaaltzorigoobgsh\biydaalt\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout1.cshtml.rz.scp.css

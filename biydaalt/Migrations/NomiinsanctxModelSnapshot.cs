@@ -22,6 +22,23 @@ namespace biydaalt.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("biydaalt.Models.Actshaltgaan", b =>
+                {
+                    b.Property<int>("actshaltgaanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("actshaltgaanId"));
+
+                    b.Property<string>("actshaltgaanName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("actshaltgaanId");
+
+                    b.ToTable("actshaltgaans");
+                });
+
             modelBuilder.Entity("biydaalt.Models.Albantushaal", b =>
                 {
                     b.Property<int>("albantushaalId")
@@ -36,7 +53,7 @@ namespace biydaalt.Migrations
 
                     b.HasKey("albantushaalId");
 
-                    b.ToTable("Albantushaals");
+                    b.ToTable("albantushaals");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Book", b =>
@@ -57,6 +74,10 @@ namespace biydaalt.Migrations
 
                     b.Property<int>("book_count")
                         .HasColumnType("int");
+
+                    b.Property<string>("bookimage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("dedTurulId")
                         .HasColumnType("int");
@@ -86,7 +107,9 @@ namespace biydaalt.Migrations
 
                     b.HasIndex("turulId");
 
-                    b.ToTable("Books");
+                    b.HasIndex("workerId");
+
+                    b.ToTable("books");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Bookact", b =>
@@ -103,9 +126,8 @@ namespace biydaalt.Migrations
                     b.Property<DateOnly>("actdate")
                         .HasColumnType("date");
 
-                    b.Property<string>("actshaltgaan")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("actshaltgaanId")
+                        .HasColumnType("int");
 
                     b.Property<int>("bookId")
                         .HasColumnType("int");
@@ -115,11 +137,13 @@ namespace biydaalt.Migrations
 
                     b.HasKey("bookactId");
 
+                    b.HasIndex("actshaltgaanId");
+
                     b.HasIndex("bookId");
 
                     b.HasIndex("workerId");
 
-                    b.ToTable("Bookacts");
+                    b.ToTable("bookacts");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Bookgive", b =>
@@ -153,7 +177,7 @@ namespace biydaalt.Migrations
 
                     b.HasIndex("workerId");
 
-                    b.ToTable("Bookgives");
+                    b.ToTable("bookgives");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Dedturul", b =>
@@ -175,7 +199,7 @@ namespace biydaalt.Migrations
 
                     b.HasIndex("turulId");
 
-                    b.ToTable("DedTuruls");
+                    b.ToTable("dedTuruls");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Department", b =>
@@ -192,7 +216,7 @@ namespace biydaalt.Migrations
 
                     b.HasKey("departmentId");
 
-                    b.ToTable("Departments");
+                    b.ToTable("departments");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Torguuli", b =>
@@ -212,6 +236,9 @@ namespace biydaalt.Migrations
                     b.Property<int>("torguulihemje")
                         .HasColumnType("int");
 
+                    b.Property<int>("torguulishaltgaanId")
+                        .HasColumnType("int");
+
                     b.Property<int>("userId")
                         .HasColumnType("int");
 
@@ -222,11 +249,30 @@ namespace biydaalt.Migrations
 
                     b.HasIndex("bookId");
 
+                    b.HasIndex("torguulishaltgaanId");
+
                     b.HasIndex("userId");
 
                     b.HasIndex("workerId");
 
-                    b.ToTable("Torguulis");
+                    b.ToTable("torguulis");
+                });
+
+            modelBuilder.Entity("biydaalt.Models.Torguulishaltgaan", b =>
+                {
+                    b.Property<int>("torguulishaltgaanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("torguulishaltgaanId"));
+
+                    b.Property<string>("torguulishaltgaanName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("torguulishaltgaanId");
+
+                    b.ToTable("torguulishaltgaans");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Turul", b =>
@@ -243,7 +289,7 @@ namespace biydaalt.Migrations
 
                     b.HasKey("turulId");
 
-                    b.ToTable("Turuls");
+                    b.ToTable("turuls");
                 });
 
             modelBuilder.Entity("biydaalt.Models.User", b =>
@@ -255,6 +301,7 @@ namespace biydaalt.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("userId"));
 
                     b.Property<int>("phone")
+                        .HasMaxLength(8)
                         .HasColumnType("int");
 
                     b.Property<string>("regdug")
@@ -262,13 +309,17 @@ namespace biydaalt.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
+                    b.Property<string>("userLast")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("userName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("userId");
 
-                    b.ToTable("Users");
+                    b.ToTable("users");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Worker", b =>
@@ -286,6 +337,7 @@ namespace biydaalt.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("phone")
+                        .HasMaxLength(8)
                         .HasColumnType("int");
 
                     b.Property<string>("regdug")
@@ -303,7 +355,7 @@ namespace biydaalt.Migrations
 
                     b.HasIndex("departmentId");
 
-                    b.ToTable("Workers");
+                    b.ToTable("workers");
                 });
 
             modelBuilder.Entity("biydaalt.Models.Book", b =>
@@ -320,24 +372,40 @@ namespace biydaalt.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("dedturuluud");
-
-                    b.Navigation("turuluud");
-                });
-
-            modelBuilder.Entity("biydaalt.Models.Bookact", b =>
-                {
-                    b.HasOne("biydaalt.Models.Book", "book")
-                        .WithMany()
-                        .HasForeignKey("bookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("biydaalt.Models.Worker", "worker")
                         .WithMany()
                         .HasForeignKey("workerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("dedturuluud");
+
+                    b.Navigation("turuluud");
+
+                    b.Navigation("worker");
+                });
+
+            modelBuilder.Entity("biydaalt.Models.Bookact", b =>
+                {
+                    b.HasOne("biydaalt.Models.Actshaltgaan", "actshaltgaan")
+                        .WithMany()
+                        .HasForeignKey("actshaltgaanId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("biydaalt.Models.Book", "book")
+                        .WithMany()
+                        .HasForeignKey("bookId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("biydaalt.Models.Worker", "worker")
+                        .WithMany()
+                        .HasForeignKey("workerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("actshaltgaan");
 
                     b.Navigation("book");
 
@@ -361,7 +429,7 @@ namespace biydaalt.Migrations
                     b.HasOne("biydaalt.Models.Worker", "worker")
                         .WithMany()
                         .HasForeignKey("workerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("book");
@@ -390,6 +458,12 @@ namespace biydaalt.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("biydaalt.Models.Torguulishaltgaan", "torguulishaltgaan")
+                        .WithMany()
+                        .HasForeignKey("torguulishaltgaanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("biydaalt.Models.User", "user")
                         .WithMany()
                         .HasForeignKey("userId")
@@ -399,10 +473,12 @@ namespace biydaalt.Migrations
                     b.HasOne("biydaalt.Models.Worker", "worker")
                         .WithMany()
                         .HasForeignKey("workerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("book");
+
+                    b.Navigation("torguulishaltgaan");
 
                     b.Navigation("user");
 

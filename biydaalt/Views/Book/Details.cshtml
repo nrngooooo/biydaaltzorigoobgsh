@@ -1,13 +1,14 @@
 ﻿@model biydaalt.Models.Book
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Номын дэлгэрэнгүй хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Номын дэлгэрэнгүй хуудас</h1>
 
 <div>
-    <h4>Book</h4>
+    <h4>Ном</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -15,6 +16,12 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.bookName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.bookimage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.bookimage)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.author)
@@ -29,16 +36,16 @@
             @Html.DisplayFor(model => model.page_count)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.turuluud)
+            @Html.DisplayNameFor(model => model.turuluud.turulName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.turuluud.turulId)
+            @Html.DisplayFor(model => model.turuluud.turulName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.dedturuluud)
+            @Html.DisplayNameFor(model => model.dedturuluud.dedTurulName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.dedturuluud.dedTurulId)
+            @Html.DisplayFor(model => model.dedturuluud.dedTurulName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.book_count)
@@ -65,14 +72,14 @@
             @Html.DisplayFor(model => model.price)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.workerId)
+            @Html.DisplayNameFor(model => model.worker.workerName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.workerId)
+            @Html.DisplayFor(model => model.worker.workerName)
         </dd>
     </dl>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.bookId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>

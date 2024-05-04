@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<biydaalt.Models.Book>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ном нүүр хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Ном нүүр хуудас</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Шинээр ном нэмэх</a>
 </p>
 <table class="table">
     <thead>
@@ -16,16 +17,19 @@
                 @Html.DisplayNameFor(model => model.bookName)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.bookimage)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.author)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.page_count)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.turuluud)
+                @Html.DisplayNameFor(model => model.turuluud.turulName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dedturuluud)
+                @Html.DisplayNameFor(model => model.dedturuluud.dedTurulName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.book_count)
@@ -40,7 +44,7 @@
                 @Html.DisplayNameFor(model => model.price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.workerId)
+                @Html.DisplayNameFor(model => model.worker.workerName)
             </th>
             <th></th>
         </tr>
@@ -51,6 +55,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.bookName)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookimage)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.author)
             </td>
@@ -76,12 +83,12 @@
                 @Html.DisplayFor(modelItem => item.price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.workerId)
+                @Html.DisplayFor(modelItem => item.worker.workerName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.bookId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.bookId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.bookId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.bookId">Засах</a> |
+                <a asp-action="Details" asp-route-id="@item.bookId">Дэлгэрэнгүй</a> |
+                <a asp-action="Delete" asp-route-id="@item.bookId">Устгах</a>
             </td>
         </tr>
 }

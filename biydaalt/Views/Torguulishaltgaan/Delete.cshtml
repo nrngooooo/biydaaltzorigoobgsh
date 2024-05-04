@@ -1,0 +1,28 @@
+﻿@model biydaalt.Models.Torguulishaltgaan
+
+@{
+    ViewData["Title"] = "Торгуулийн шалтгаан устгах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Торгуулийн шалтгаан устгах</h1>
+
+<h3>Та үүнийг устгахдаа итгэлтэй байна уу?</h3>
+<div>
+    <h4>Торгуулийн шалтгаан</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.torguulishaltgaanName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.torguulishaltgaanName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="torguulishaltgaanId" />
+        <input type="submit" value="Тийм" class="btn btn-danger" /> |
+        <a asp-action="Index">Буцах</a>
+    </form>
+</div>

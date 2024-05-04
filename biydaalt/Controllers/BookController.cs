@@ -18,14 +18,14 @@ namespace biydaalt.Controllers
             _context = context;
         }
 
-        // GET: Book
+        // GET: Books
         public async Task<IActionResult> Index()
         {
-            var nomiinsanctx = _context.Books.Include(b => b.dedturuluud).Include(b => b.turuluud);
+            var nomiinsanctx = _context.books.Include(b => b.dedturuluud).Include(b => b.turuluud).Include(b => b.worker);
             return View(await nomiinsanctx.ToListAsync());
         }
 
-        // GET: Book/Details/5
+        // GET: Books/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,9 +33,10 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
+            var book = await _context.books
                 .Include(b => b.dedturuluud)
                 .Include(b => b.turuluud)
+                .Include(b => b.worker)
                 .FirstOrDefaultAsync(m => m.bookId == id);
             if (book == null)
             {
@@ -45,33 +46,35 @@ namespace biydaalt.Controllers
             return View(book);
         }
 
-        // GET: Book/Create
+        // GET: Books/Create
         public IActionResult Create()
         {
-            ViewData["dedTurulId"] = new SelectList(_context.DedTuruls, "dedTurulId", "dedTurulName");
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName");
+            ViewData["dedTurulId"] = new SelectList(_context.dedTuruls, "dedTurulId", "dedTurulName");
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName");
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName");
             return View();
         }
 
-        // POST: Book/Create
+        // POST: Books/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("bookId,bookName,author,page_count,turulId,dedTurulId,book_count,pub_date,pub_company,price,workerId")] Book book)
+        public async Task<IActionResult> Create([Bind("bookId,bookName,bookimage,author,page_count,turulId,dedTurulId,book_count,pub_date,pub_company,price,workerId")] Book book)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["dedTurulId"] = new SelectList(_context.DedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", book.turulId);
+            ViewData["dedTurulId"] = new SelectList(_context.dedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", book.turulId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", book.workerId);
             return View(book);
         }
 
-        // GET: Book/Edit/5
+        // GET: Books/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,29 +82,30 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books.FindAsync(id);
+            var book = await _context.books.FindAsync(id);
             if (book == null)
             {
                 return NotFound();
             }
-            ViewData["dedTurulId"] = new SelectList(_context.DedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", book.turulId);
+            ViewData["dedTurulId"] = new SelectList(_context.dedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", book.turulId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", book.workerId);
             return View(book);
         }
 
-        // POST: Book/Edit/5
+        // POST: Books/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("bookId,bookName,author,page_count,turulId,dedTurulId,book_count,pub_date,pub_company,price,workerId")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("bookId,bookName,bookimage,author,page_count,turulId,dedTurulId,book_count,pub_date,pub_company,price,workerId")] Book book)
         {
             if (id != book.bookId)
             {
                 return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -121,12 +125,13 @@ namespace biydaalt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["dedTurulId"] = new SelectList(_context.DedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
-            ViewData["turulId"] = new SelectList(_context.Turuls, "turulId", "turulName", book.turulId);
+            ViewData["dedTurulId"] = new SelectList(_context.dedTuruls, "dedTurulId", "dedTurulName", book.dedTurulId);
+            ViewData["turulId"] = new SelectList(_context.turuls, "turulId", "turulName", book.turulId);
+            ViewData["workerId"] = new SelectList(_context.workers, "workerId", "workerName", book.workerId);
             return View(book);
         }
 
-        // GET: Book/Delete/5
+        // GET: Books/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,9 +139,10 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var book = await _context.Books
+            var book = await _context.books
                 .Include(b => b.dedturuluud)
                 .Include(b => b.turuluud)
+                .Include(b => b.worker)
                 .FirstOrDefaultAsync(m => m.bookId == id);
             if (book == null)
             {
@@ -146,15 +152,15 @@ namespace biydaalt.Controllers
             return View(book);
         }
 
-        // POST: Book/Delete/5
+        // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var book = await _context.Books.FindAsync(id);
+            var book = await _context.books.FindAsync(id);
             if (book != null)
             {
-                _context.Books.Remove(book);
+                _context.books.Remove(book);
             }
 
             await _context.SaveChangesAsync();
@@ -163,7 +169,7 @@ namespace biydaalt.Controllers
 
         private bool BookExists(int id)
         {
-            return _context.Books.Any(e => e.bookId == id);
+            return _context.books.Any(e => e.bookId == id);
         }
     }
 }

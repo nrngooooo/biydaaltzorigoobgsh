@@ -3,116 +3,56 @@
   "WorkspaceRootPath": "D:\\biydaaltzorigoobgsh\\biydaalt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\book\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\home1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\home1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\worker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\worker\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\bookact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\bookact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\dedturul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\dedturul.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\dedturulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\dedturulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\shared\\_layout1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\shared\\_layout1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\bookact\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\bookact\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\home1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\home1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\albantushaal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\albantushaal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\turulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\turulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\torguulicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\torguulicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\bookgivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\bookgivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\bookgivescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\bookgivescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\bookactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\bookactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\albantushaal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\albantushaal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\nomiinsanctx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\nomiinsanctx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\torguuli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\torguuli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\bookgive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\bookgive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\controllers\\turulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:controllers\\turulcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\models\\bookact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:models\\bookact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|d:\\biydaaltzorigoobgsh\\biydaalt\\views\\turul\\indexu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{212A1536-9F82-42B6-A842-0DDB379E1EF4}|biydaalt.csproj|solutionrelative:views\\turul\\indexu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,206 +62,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T16:25:43.868Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Book\\Index.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Index.cshtml",
-              "RelativeToolTip": "Views\\Book\\Index.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAD8AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:34:18.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Book\\Details.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Details.cshtml",
-              "RelativeToolTip": "Views\\Book\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:34:15.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Worker\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Worker\\Index.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Worker\\Index.cshtml",
-              "RelativeToolTip": "Views\\Worker\\Index.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:28:15.326Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T16:23:23.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Bookact\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookact\\Index.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Bookact\\Index.cshtml",
-              "RelativeToolTip": "Views\\Bookact\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:28:02.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dedturul.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Dedturul.cs",
-              "RelativeDocumentMoniker": "Models\\Dedturul.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Dedturul.cs",
-              "RelativeToolTip": "Models\\Dedturul.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:17:36.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WorkerController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\WorkerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WorkerController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\WorkerController.cs",
-              "RelativeToolTip": "Controllers\\WorkerController.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAqwEUAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:10:48.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Book\\Create.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Book\\Create.cshtml",
-              "RelativeToolTip": "Views\\Book\\Create.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADsAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:03:11.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookController.cs",
-              "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAwwGcAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:41:36.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACsAAAAAAAAAAAAYwDQAAAB4AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T07:57:58.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:26:53.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Albantushaal\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Albantushaal\\Create.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Albantushaal\\Create.cshtml",
-              "RelativeToolTip": "Views\\Albantushaal\\Create.cshtml",
+              "DocumentIndex": 4,
+              "Title": "_Layout1.cshtml",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Shared\\_Layout1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout1.cshtml",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Shared\\_Layout1.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout1.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T16:22:17.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T16:26:24.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home1\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home1\\Index.cshtml",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Home1\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home1\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:03:05.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:48:35.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TurulController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TurulController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TurulController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TurulController.cs",
-              "RelativeToolTip": "Controllers\\TurulController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA1wB0AAAAbAAAA",
+              "DocumentIndex": 6,
+              "Title": "Home1Controller.cs",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\Home1Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Home1Controller.cs",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\Home1Controller.cs",
+              "RelativeToolTip": "Controllers\\Home1Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:47:29.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:45:31.634Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "DedturulController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\DedturulController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DedturulController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\DedturulController.cs",
-              "RelativeToolTip": "Controllers\\DedturulController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowDwAAAARAAAA",
+              "Title": "BookgiveController.cs",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookgiveController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookgiveController.cs",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookgiveController.cs",
+              "RelativeToolTip": "Controllers\\BookgiveController.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:40:44.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:43:07.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Bookact\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookact\\Delete.cshtml",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Bookact\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Bookact\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T08:07:24.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TorguuliController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TorguuliController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TorguuliController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TorguuliController.cs",
-              "RelativeToolTip": "Controllers\\TorguuliController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:46:10.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:48:21.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
@@ -329,164 +171,55 @@
               "RelativeToolTip": "Controllers\\DepartmentController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:44:43.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:42:49.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BookgivesController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookgivesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookgivesController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookgivesController.cs",
-              "RelativeToolTip": "Controllers\\BookgivesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:43:46.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:36:03.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BookactController.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookactController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookactController.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\BookactController.cs",
-              "RelativeToolTip": "Controllers\\BookactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:42:45.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Albantushaal.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Albantushaal.cs",
-              "RelativeDocumentMoniker": "Models\\Albantushaal.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Albantushaal.cs",
-              "RelativeToolTip": "Models\\Albantushaal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:36:03.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "Models\\Department.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Department.cs",
-              "RelativeToolTip": "Models\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:31:01.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwCYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:24:15.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA3wBIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:19:54.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Nomiinsanctx.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Nomiinsanctx.cs",
-              "RelativeDocumentMoniker": "Models\\Nomiinsanctx.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Nomiinsanctx.cs",
-              "RelativeToolTip": "Models\\Nomiinsanctx.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA7wCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:18:01.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Torguuli.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Torguuli.cs",
-              "RelativeDocumentMoniker": "Models\\Torguuli.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Torguuli.cs",
-              "RelativeToolTip": "Models\\Torguuli.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:15:58.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:16:17.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Bookgive.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Bookgive.cs",
-              "RelativeDocumentMoniker": "Models\\Bookgive.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Bookgive.cs",
-              "RelativeToolTip": "Models\\Bookgive.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T06:17:20.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-22T04:52:01.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:23:21.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Bookact.cs",
-              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Bookact.cs",
-              "RelativeDocumentMoniker": "Models\\Bookact.cs",
-              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Models\\Bookact.cs",
-              "RelativeToolTip": "Models\\Bookact.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
+              "DocumentIndex": 11,
+              "Title": "TurulController.cs",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TurulController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TurulController.cs",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Controllers\\TurulController.cs",
+              "RelativeToolTip": "Controllers\\TurulController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBkAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T06:17:30.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T16:28:45.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Indexu.cshtml",
+              "DocumentMoniker": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Turul\\Indexu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Turul\\Indexu.cshtml",
+              "ToolTip": "D:\\biydaaltzorigoobgsh\\biydaalt\\Views\\Turul\\Indexu.cshtml",
+              "RelativeToolTip": "Views\\Turul\\Indexu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T16:26:08.468Z"
             }
           ]
         }

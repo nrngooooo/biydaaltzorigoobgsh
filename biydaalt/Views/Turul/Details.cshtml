@@ -1,13 +1,14 @@
 ﻿@model biydaalt.Models.Turul
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Номын төрөл дэлгэрэнгүй хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Номын төрөл дэлгэрэнгүй хуудас</h1>
 
 <div>
-    <h4>Turul</h4>
+    <h4>Номын төрөл</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -19,6 +20,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.turulId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.turulId">Засах</a> |
+    <a asp-action="Index">Буцах</a>
 </div>

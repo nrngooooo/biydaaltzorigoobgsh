@@ -1,12 +1,12 @@
 ﻿@model biydaalt.Models.Worker
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Ажилтан нэмэх";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Ажилтан нэмэх</h1>
 
-<h4>Worker</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,11 +18,11 @@
                 <span asp-validation-for="workerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="departmentId" class="control-label"></label>
+                <label asp-for="department.departmentName" class="control-label"></label>
                 <select asp-for="departmentId" class ="form-control" asp-items="ViewBag.departmentId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="albantushaalId" class="control-label"></label>
+                <label asp-for="albantushaal.albantushaalName" class="control-label"></label>
                 <select asp-for="albantushaalId" class ="form-control" asp-items="ViewBag.albantushaalId"></select>
             </div>
             <div class="form-group">
@@ -36,14 +36,14 @@
                 <span asp-validation-for="phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Нэмэх" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>
 
 @section Scripts {

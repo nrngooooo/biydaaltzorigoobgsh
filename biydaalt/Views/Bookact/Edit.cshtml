@@ -1,12 +1,13 @@
 ﻿@model biydaalt.Models.Bookact
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Актласан номын мэдээлэл засах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Актласан номын мэдээлэл засах</h1>
 
-<h4>Bookact</h4>
+<h4>Актласан ном</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,12 +15,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="bookactId" />
             <div class="form-group">
-                <label asp-for="bookId" class="control-label"></label>
+                <label asp-for="book.bookName" class="control-label"></label>
                 <select asp-for="bookId" class="form-control" asp-items="ViewBag.bookId"></select>
                 <span asp-validation-for="bookId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="workerId" class="control-label"></label>
+                <label asp-for="worker.workerName" class="control-label"></label>
                 <select asp-for="workerId" class="form-control" asp-items="ViewBag.workerId"></select>
                 <span asp-validation-for="workerId" class="text-danger"></span>
             </div>
@@ -29,24 +30,24 @@
                 <span asp-validation-for="act_count" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="actshaltgaan" class="control-label"></label>
-                <input asp-for="actshaltgaan" class="form-control" />
-                <span asp-validation-for="actshaltgaan" class="text-danger"></span>
+                <label asp-for="actshaltgaan.actshaltgaanName" class="control-label"></label>
+                <select asp-for="actshaltgaanId" class="form-control" asp-items="ViewBag.actshaltgaanId"></select>
+                <span asp-validation-for="actshaltgaanId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="actdate" class="control-label"></label>
-                <input asp-for="actdate" class="form-control" />
+                <input type="date" asp-for="actdate" class="form-control" />
                 <span asp-validation-for="actdate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Засах" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Буцах</a>
 </div>
 
 @section Scripts {

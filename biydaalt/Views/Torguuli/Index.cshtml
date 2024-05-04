@@ -1,28 +1,32 @@
 ﻿@model IEnumerable<biydaalt.Models.Torguuli>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Торгуулийн мэдээлэл нүүр хуудас";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Торгуулийн мэдээлэл нүүр хуудас</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Шинээр торгууль бодох</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.user)
+                @Html.DisplayNameFor(model => model.user.userName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.worker)
+                @Html.DisplayNameFor(model => model.worker.workerName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.book)
+                @Html.DisplayNameFor(model => model.book.bookName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ashigodor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.torguulishaltgaan.torguulishaltgaanName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.torguulihemje)
@@ -34,24 +38,27 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.user.userId)
+                @Html.DisplayFor(modelItem => item.user.userName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.worker.workerId)
+                @Html.DisplayFor(modelItem => item.worker.workerName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.book.bookId)
+                @Html.DisplayFor(modelItem => item.book.bookName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ashigodor)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.torguulishaltgaan.torguulishaltgaanName)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.torguulihemje)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.torguuliId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.torguuliId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.torguuliId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.torguuliId">Засах</a> |
+                <a asp-action="Details" asp-route-id="@item.torguuliId">Дэлгэрэнгүй</a> |
+                <a asp-action="Delete" asp-route-id="@item.torguuliId">Устгах</a>
             </td>
         </tr>
 }

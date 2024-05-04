@@ -1,0 +1,52 @@
+﻿@model biydaalt.Models.Bookgive
+
+@{
+    ViewData["Title"] = "Олгосон номын мэдээлэл устгах";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Олгосон номын мэдээлэл устгах</h1>
+
+<h3>Үүнийг устгахдаа итгэлтэй байна уу?</h3>
+<div>
+    <h4>Олгосон ном</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book.bookName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book.bookName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.user.userName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.user.userName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.worker.workerName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.worker.workerName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.enterdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.enterdate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.retdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.retdate)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="bookgiveId" />
+        <input type="submit" value="Тийм" class="btn btn-danger" /> |
+        <a asp-action="Index">Үгүй</a>
+    </form>
+</div>

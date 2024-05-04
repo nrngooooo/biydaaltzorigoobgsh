@@ -21,7 +21,7 @@ namespace biydaalt.Controllers
         // GET: Albantushaal
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Albantushaals.ToListAsync());
+            return View(await _context.albantushaals.ToListAsync());
         }
 
         // GET: Albantushaal/Details/5
@@ -32,7 +32,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var albantushaal = await _context.Albantushaals
+            var albantushaal = await _context.albantushaals
                 .FirstOrDefaultAsync(m => m.albantushaalId == id);
             if (albantushaal == null)
             {
@@ -72,7 +72,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var albantushaal = await _context.Albantushaals.FindAsync(id);
+            var albantushaal = await _context.albantushaals.FindAsync(id);
             if (albantushaal == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace biydaalt.Controllers
                 return NotFound();
             }
 
-            var albantushaal = await _context.Albantushaals
+            var albantushaal = await _context.albantushaals
                 .FirstOrDefaultAsync(m => m.albantushaalId == id);
             if (albantushaal == null)
             {
@@ -138,10 +138,10 @@ namespace biydaalt.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var albantushaal = await _context.Albantushaals.FindAsync(id);
+            var albantushaal = await _context.albantushaals.FindAsync(id);
             if (albantushaal != null)
             {
-                _context.Albantushaals.Remove(albantushaal);
+                _context.albantushaals.Remove(albantushaal);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace biydaalt.Controllers
 
         private bool AlbantushaalExists(int id)
         {
-            return _context.Albantushaals.Any(e => e.albantushaalId == id);
+            return _context.albantushaals.Any(e => e.albantushaalId == id);
         }
     }
 }

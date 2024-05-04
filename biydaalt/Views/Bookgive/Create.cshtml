@@ -1,0 +1,50 @@
+﻿@model biydaalt.Models.Bookgive
+
+@{
+    ViewData["Title"] = "Ном олгох";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Ном олгох</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="book.bookName" class="control-label"></label>
+                <select asp-for="bookId" class ="form-control" asp-items="ViewBag.bookId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="user.userName" class="control-label"></label>
+                <select asp-for="userId" class ="form-control" asp-items="ViewBag.userId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="worker.workerName" class="control-label"></label>
+                <select asp-for="workerId" class ="form-control" asp-items="ViewBag.workerId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="enterdate" class="control-label"></label>
+                <input type="date" asp-for="enterdate" class="form-control" />
+                <span asp-validation-for="enterdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="retdate" class="control-label"></label>
+                <input type="date" asp-for="retdate" class="form-control" />
+                <span asp-validation-for="retdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ном олгох" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Буцах</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

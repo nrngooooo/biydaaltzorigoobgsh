@@ -15,21 +15,49 @@ namespace biydaalt.Models
                 .HasOne(n => n.turuluud)
                 .WithMany()
                 .HasForeignKey(n => n.turulId)
-                .OnDelete(DeleteBehavior.Restrict); // Specify the desired delete behavior here
+                .OnDelete(DeleteBehavior.Restrict); 
+            modelBuilder.Entity<Bookact>()
+                .HasOne(b => b.book)
+                .WithMany()
+                .HasForeignKey(b => b.bookId)
+                .OnDelete(DeleteBehavior.Restrict);
 
-            // Configure other relationships here if needed
+            modelBuilder.Entity<Bookact>()
+                .HasOne(b => b.worker)
+                .WithMany()
+                .HasForeignKey(b => b.workerId)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            modelBuilder.Entity<Bookact>()
+                .HasOne(b => b.actshaltgaan)
+                .WithMany()
+                .HasForeignKey(b => b.actshaltgaanId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Bookgive>()
+                .HasOne(b => b.worker)
+                .WithMany()
+                .HasForeignKey(b => b.workerId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Torguuli>()
+                .HasOne(b => b.worker)
+                .WithMany()
+                .HasForeignKey(b => b.workerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Turul> Turuls { get; set; }
-        public DbSet<Dedturul> DedTuruls { get; set; }
-        public DbSet<Worker> Workers { get; set; }
-        public DbSet<Albantushaal> Albantushaals { get; set; }
-        public DbSet<Department> Departments { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Torguuli> Torguulis { get; set; }
-        public DbSet<Bookgive> Bookgives { get; set; }
-        public DbSet<Bookact> Bookacts { get; set; }
+        public DbSet<Book> books { get; set; }
+        public DbSet<Turul> turuls { get; set; }
+        public DbSet<Dedturul> dedTuruls { get; set; }
+        public DbSet<Worker> workers { get; set; }
+        public DbSet<Albantushaal> albantushaals { get; set; }
+        public DbSet<Department> departments { get; set; }
+        public DbSet<User> users { get; set; }
+        public DbSet<Torguuli>torguulis { get; set; }
+        public DbSet<Torguulishaltgaan> torguulishaltgaans { get; set; }
+        public DbSet<Bookgive> bookgives { get; set; }
+        public DbSet<Bookact> bookacts { get; set; }
+        public DbSet<Actshaltgaan> actshaltgaans { get; set; }
+
     }
 }
